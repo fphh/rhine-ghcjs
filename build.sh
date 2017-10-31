@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cabal build
-cp dist/build/rhine-example-ghcjs-1/rhine-example-ghcjs-1.jsexe/all.js html/all.js
+cp dist/build/rhine-ghcjs/rhine-ghcjs.jsexe/all.js html/all.js

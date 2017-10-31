@@ -15,8 +15,8 @@ build-type:          Simple
 extra-source-files:  ChangeLog.md
 cabal-version:       >=1.10
 
-executable rhine-example-ghcjs-1
-  main-is:             Main1.hs
+executable rhine-ghcjs
+  main-is:             Main.hs
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.9 && <4.10

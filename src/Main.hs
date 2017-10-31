@@ -111,6 +111,7 @@ main = do
   reactRenderView "app" webApp
 
 
+
 {-
 
 data Stock =
