@@ -1,0 +1,3 @@
+[submodule "react-hs"]
+	path = react-hs
+	url = https://github.com/liqula/react-hs.git
