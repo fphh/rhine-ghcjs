@@ -1,9 +1,14 @@
 
-body {
-    font-family: "Verdana", sans-serif;
+.redToBlack {
+    animation-duration: 1200ms;
+    animation-name: rtb;
 }
 
-
-.myhid {
-    visibility: visible !important;
+@keyframes rtb {
+    from {
+	color: #ff0000;
+    }
+    to {
+	color: #333333;
+    }
 }
