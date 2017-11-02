@@ -110,8 +110,8 @@ instance StoreData StockExchange where
     in return (StockExchange stocks newBal newPort portfolioValue)
 
   transform (Modify utc name) StockExchange{..} = do
-    value <- randomRIO (-0.5, 0.5)
-    let f xs = (utc, current xs +  ((if current xs < 0.6 then abs else id) value)) : take (numOfPts-1) xs  
+    val <- randomRIO (0.9, 1.1)
+    let f xs = (utc, current xs * val) : take (numOfPts-1) xs
         newStocks = Map.adjust f name stocks
     return (StockExchange newStocks balance portfolio portfolioValue)
     
